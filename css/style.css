@@ -1,0 +1,696 @@
+@charset "UTF-8";
+body {
+  background-color: #c4cceb;
+  font-family: "Montserrat", "Arial", YuGothic, "Yu Gothic", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: bold;
+}
+
+.section_wrapper {
+  padding: 0 20px;
+}
+
+.inner {
+  width: 1004px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  font-family: "TsukuBRdGothic-Regular";
+  text-align: center;
+  padding-top: 24px;
+}
+
+.header h1 {
+  font-size: 20px;
+  line-height: 51.6px;
+}
+
+.header h1::before {
+  content: "";
+  display: inline-block;
+  width: 51.6px;
+  height: 51.6px;
+  background-image: url(../img/bank.png);
+  background-size: contain;
+  vertical-align: middle;
+  margin-right: 14.4px;
+}
+
+.fv {
+  font-family: "TsukuBRdGothic-Regular";
+  height: 90vh;
+  padding-top: 141.5px;
+  position: relative;
+}
+
+@media (max-width: 1003px) {
+  .fv {
+    padding-top: 14.09363vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .fv {
+    height: 300px;
+    padding-top: 36.4px;
+  }
+}
+
+.fv p {
+  font-size: 80px;
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 50px 42px 50px 35px;
+  margin-bottom: 26px;
+}
+
+@media (max-width: 1003px) {
+  .fv p {
+    font-size: 7.96813vw;
+    padding-top: 4.98008vw;
+    padding-right: 4.18327vw;
+    padding-bottom: 4.98008vw;
+    padding-left: 3.48606vw;
+    margin-bottom: 2.58964vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .fv p {
+    display: block;
+    width: 263px;
+    font-size: 26px;
+    padding: 16px 17px 17px 12px;
+    margin-bottom: 9px;
+  }
+}
+
+.fv p + p {
+  padding: 53px 55px 47px 47px;
+  margin: 0;
+}
+
+@media (max-width: 1003px) {
+  .fv p + p {
+    padding-top: 5.27888vw;
+    padding-right: 5.47809vw;
+    padding-bottom: 4.68127vw;
+    padding-left: 4.68127vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .fv p + p {
+    padding: 18px 20px 16px 15px;
+    width: 139px;
+  }
+}
+
+.fv .arrow_bottom {
+  border-bottom: solid 10px #000;
+  border-right: solid 10px #000;
+  width: 37px;
+  height: 37px;
+  position: absolute;
+  top: 97%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
+}
+
+@media (max-width: 767px) {
+  .fv .arrow_bottom {
+    top: 90%;
+  }
+}
+
+.point {
+  padding-top: 290px;
+  text-align: center;
+}
+
+@media (max-width: 1003px) {
+  .point {
+    padding-top: 28.88446vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .point {
+    padding-top: 75px;
+  }
+}
+
+.point h2::before, .point h2::after {
+  content: "";
+  display: inline-block;
+  width: 83.75px;
+  height: 83.75px;
+  background-image: url(../img/bill.png);
+  background-size: contain;
+  vertical-align: middle;
+}
+
+@media (max-width: 1003px) {
+  .point h2::before, .point h2::after {
+    width: 8.34163vw;
+    height: 8.34163vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .point h2::before, .point h2::after {
+    width: 33.45px;
+    height: 33.45px;
+  }
+}
+
+.point h2 {
+  font-size: 50px;
+  font-weight: normal;
+  margin-bottom: 52px;
+}
+
+@media (max-width: 1003px) {
+  .point h2 {
+    font-size: 4.98008vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .point h2 {
+    font-size: 19px;
+  }
+}
+
+.point h2::before {
+  margin-right: 27.8px;
+}
+
+@media (max-width: 1003px) {
+  .point h2::before {
+    margin-right: 2.76892vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .point h2::before {
+    margin-right: 11.1px;
+  }
+}
+
+.point h2::after {
+  margin-left: 36.5px;
+}
+
+@media (max-width: 1003px) {
+  .point h2::after {
+    margin-left: 3.63546vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .point h2::after {
+    margin-left: 20px;
+  }
+}
+
+.point .point_box {
+  font-family: "TsukuARdGothic-Regular";
+  border: solid 15px #fff;
+  border-radius: 43px;
+  padding: 100px 118px 59px 175px;
+}
+
+@media (max-width: 1003px) {
+  .point .point_box {
+    padding-top: 9.96016vw;
+    padding-right: 11.75299vw;
+    padding-bottom: 5.87649vw;
+    padding-left: 17.43028vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .point .point_box {
+    border: solid 8px #fff;
+    padding: 44px 21px 68px 22px;
+  }
+}
+
+.point .point_box .result {
+  font-size: 160px;
+  position: relative;
+}
+
+@media (max-width: 1003px) {
+  .point .point_box .result {
+    font-size: 15.93625vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .point .point_box .result {
+    font-size: 80px;
+  }
+}
+
+.point .point_box .result::before {
+  content: "";
+  position: absolute;
+  background: repeating-linear-gradient(135deg, #707070 0, #707070 1px, #c4cceb 1px, #c4cceb 5px);
+  bottom: -30.5px;
+  left: 50%;
+  width: 546px;
+  max-width: 100%;
+  height: 18px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.point .point_box .result span {
+  font-size: 100px;
+}
+
+@media (max-width: 1003px) {
+  .point .point_box .result span {
+    font-size: 9.96016vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .point .point_box .result span {
+    font-size: 50px;
+  }
+}
+
+.point .point_box .result + p {
+  font-size: 30px;
+  text-align: left;
+  line-height: 1.7;
+  padding-top: 101px;
+}
+
+@media (max-width: 1003px) {
+  .point .point_box .result + p {
+    font-size: 2.98805vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .point .point_box .result + p {
+    font-size: 18px;
+  }
+}
+
+.book {
+  padding-top: 249px;
+  padding-bottom: 230px;
+  text-align: center;
+}
+
+@media (max-width: 1003px) {
+  .book {
+    padding-top: 24.8008vw;
+    padding-bottom: 22.90837vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .book {
+    padding-top: 140px;
+    padding-bottom: 111.7px;
+  }
+}
+
+.book h2::before, .book h2::after {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 13px;
+  height: 95px;
+  background-color: #ffffff;
+  border-radius: 11px;
+}
+
+@media (max-width: 1003px) {
+  .book h2::before, .book h2::after {
+    width: 1.29482vw;
+    height: 9.46215vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .book h2::before, .book h2::after {
+    width: 3.85px;
+    height: 28.1px;
+  }
+}
+
+.book h2 {
+  font-family: "TsukuARdGothic-Regular";
+  font-size: 80px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-block;
+  padding-bottom: 115px;
+}
+
+@media (max-width: 1003px) {
+  .book h2 {
+    font-size: 7.96813vw;
+    padding-bottom: 11.45418vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .book h2 {
+    font-size: 23px;
+    padding-bottom: 78.6px;
+  }
+}
+
+.book h2::before {
+  left: -80px;
+  -webkit-transform: translate(-50px, 20px) rotate(-35deg);
+          transform: translate(-50px, 20px) rotate(-35deg);
+}
+
+@media (max-width: 1003px) {
+  .book h2::before {
+    left: -7.96813vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .book h2::before {
+    left: -25px;
+  }
+}
+
+.book h2::after {
+  right: -80px;
+  -webkit-transform: translate(50px, 20px) rotate(35deg);
+          transform: translate(50px, 20px) rotate(35deg);
+}
+
+@media (max-width: 1003px) {
+  .book h2::after {
+    right: -7.96813vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .book h2::after {
+    right: -20px;
+  }
+}
+
+.book dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .book dl {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .book dl dt {
+    width: 100%;
+  }
+}
+
+.book dl dt .book_img {
+  position: relative;
+  width: 330px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.book dl dt .book_img img {
+  -webkit-box-shadow: 11.4px -12.1px #222222;
+          box-shadow: 11.4px -12.1px #222222;
+}
+
+.book dl dt .book_img::before {
+  content: "ダミー";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 50px;
+}
+
+.book dl .book_detail {
+  padding-left: 93.7px;
+  line-height: 1.7;
+}
+
+@media (max-width: 767px) {
+  .book dl .book_detail {
+    padding: 0;
+  }
+}
+
+.book dl .book_detail dd {
+  font-family: "TsukuARdGothic-Regular";
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+@media (max-width: 767px) {
+  .book dl .book_detail dd {
+    padding: 70.5px 0 90px;
+  }
+}
+
+.book dl .book_detail dd p {
+  font-size: 20px;
+  margin-bottom: 1em;
+}
+
+@media (max-width: 1003px) {
+  .book dl .book_detail dd p {
+    font-size: 1.99203vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .book dl .book_detail dd p {
+    font-size: 16px;
+  }
+}
+
+.book dl .book_detail a {
+  display: inline-block;
+  max-width: 100%;
+  padding: 20.9px 113.8px 19.9px 119px;
+  font-size: 40px;
+  background-color: #fff;
+  -webkit-box-shadow: 7.2px 9px;
+          box-shadow: 7.2px 9px;
+  border-radius: 51px;
+  text-align: center;
+}
+
+@media (max-width: 1003px) {
+  .book dl .book_detail a {
+    padding-top: 2.08167vw;
+    padding-right: 11.33466vw;
+    padding-bottom: 1.98207vw;
+    padding-left: 11.85259vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .book dl .book_detail a {
+    padding: 15px 79px 21.3px;
+  }
+}
+
+.author {
+  font-family: "Yu Gothic";
+  padding: 81px 20px 189px;
+  background-color: #ffffff;
+}
+
+@media (max-width: 1003px) {
+  .author {
+    padding-top: 8.06773vw;
+    padding-right: 1.99203vw;
+    padding-bottom: 18.8247vw;
+    padding-left: 1.99203vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .author {
+    padding: 124px 20px 174px;
+  }
+}
+
+.author ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 84px;
+}
+
+@media (max-width: 767px) {
+  .author ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+}
+
+.author ul li {
+  width: 340px;
+}
+
+@media (max-width: 767px) {
+  .author ul li {
+    width: 100%;
+  }
+}
+
+.author ul li:first-child {
+  margin-right: 60px;
+}
+
+.author ul li figure {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .author ul li figure {
+    text-align: center;
+  }
+}
+
+.author ul li figure img {
+  border-radius: 50%;
+}
+
+.author ul li dl {
+  padding-top: 107px;
+}
+
+.author ul li dl dt {
+  font-size: 32px;
+}
+
+@media (max-width: 1003px) {
+  .author ul li dl dt {
+    font-size: 3.18725vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .author ul li dl dt {
+    font-size: 30px;
+  }
+}
+
+.author ul li dl dd {
+  padding-top: 16px;
+  line-height: 1.688;
+}
+
+.author ul li address {
+  padding-top: 41px;
+}
+
+@media (max-width: 767px) {
+  .author ul li address {
+    font-size: 15px;
+  }
+}
+
+.author ul li address p {
+  margin-bottom: 1em;
+}
+
+@media (max-width: 767px) {
+  .author ul .author_left dl {
+    padding-top: 39px;
+  }
+  .author ul .author_left dl dd {
+    padding-top: 20px;
+  }
+  .author ul .author_left address {
+    padding-top: 20px;
+  }
+  .author ul .author_right {
+    padding-top: 140px;
+  }
+  .author ul .author_right dl {
+    padding-top: 65px;
+  }
+  .author ul .author_right dl dd {
+    padding-top: 25px;
+  }
+  .author ul .author_right address {
+    padding-top: 48px;
+  }
+}
+
+.footer {
+  font-family: "Yu Gothic";
+  padding: 97px 0 106px 0;
+  text-align: center;
+}
+
+@media (max-width: 1003px) {
+  .footer {
+    padding-top: 9.66135vw;
+    padding-bottom: 10.55777vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 33px 0;
+  }
+}
+
+.footer .director {
+  margin-right: 62px;
+}
+
+@media (max-width: 1003px) {
+  .footer .director {
+    margin-right: 6.1753vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer .director {
+    margin-right: 37px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,23 @@
+$base: #c4cceb;
+$main: #ffffff;
+
+// レイアウト幅
+$layout-width-inner: 1004px;
+
+// ブレークポイントを定義
+$breakpoints: (
+  "sp": "(max-width: 767px)",
+  "tab": "(max-width: #{$layout-width-inner - 1px})",
+  "pc": "(min-width: #{$layout-width-inner})",
+);
+
+// メディアクエリ
+@mixin mq($breakpoint: sp) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+@function vw($px) {
+  @return $px / 1004 * 100vw;
+}

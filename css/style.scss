@@ -1,0 +1,492 @@
+@import "setting";
+
+body {
+  background-color: $base;
+  font-family: "Montserrat", "Arial", YuGothic, "Yu Gothic", "ＭＳ Ｐゴシック",
+    "MS PGothic", sans-serif;
+  font-weight: bold;
+}
+
+.section_wrapper {
+  padding: 0 20px;
+}
+
+.inner {
+  width: 1004px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  font-family: "TsukuBRdGothic-Regular";
+  text-align: center;
+  padding-top: 24px;
+  h1 {
+    font-size: 20px;
+    line-height: 51.6px;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 51.6px;
+      height: 51.6px;
+      background-image: url(../img/bank.png);
+      background-size: contain;
+      vertical-align: middle;
+      margin-right: 14.4px;
+    }
+  }
+}
+
+.fv {
+  font-family: "TsukuBRdGothic-Regular";
+  height: 90vh;
+  padding-top: 141.5px;
+  position: relative;
+  @include mq(tab) {
+    padding-top: vw(141.5);
+  }
+  @include mq(sp) {
+    height: 300px;
+    padding-top: 36.4px;
+  }
+  p {
+    font-size: 80px;
+    display: inline-block;
+    background-color: $main;
+    padding: 50px 42px 50px 35px;
+    margin-bottom: 26px;
+    @include mq(tab) {
+      font-size: vw(80);
+      padding-top: vw(50);
+      padding-right: vw(42);
+      padding-bottom: vw(50);
+      padding-left: vw(35);
+      margin-bottom: vw(26);
+    }
+    @include mq(sp) {
+      display: block;
+      width: 263px;
+      font-size: 26px;
+      padding: 16px 17px 17px 12px;
+      margin-bottom: 9px;
+    }
+    & + p {
+      padding: 53px 55px 47px 47px;
+      margin: 0;
+      @include mq(tab) {
+        padding-top: vw(53);
+        padding-right: vw(55);
+        padding-bottom: vw(47);
+        padding-left: vw(47);
+      }
+      @include mq(sp) {
+        padding: 18px 20px 16px 15px;
+        width: 139px;
+      }
+    }
+  }
+
+  .arrow_bottom {
+    border-bottom: solid 10px #000;
+    border-right: solid 10px #000;
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    @include mq(sp) {
+      top: 90%;
+    }
+  }
+}
+
+.point {
+  padding-top: 290px;
+  text-align: center;
+  @include mq(tab) {
+    padding-top: vw(290);
+  }
+  @include mq(sp) {
+    padding-top: 75px;
+  }
+
+  %icon {
+    content: "";
+    display: inline-block;
+    width: 83.75px;
+    height: 83.75px;
+    background-image: url(../img/bill.png);
+    background-size: contain;
+    vertical-align: middle;
+    @include mq(tab) {
+      width: vw(83.75);
+      height: vw(83.75);
+    }
+    @include mq(sp) {
+      width: 33.45px;
+      height: 33.45px;
+    }
+  }
+
+  h2 {
+    font-size: 50px;
+    font-weight: normal;
+    margin-bottom: 52px;
+    @include mq(tab) {
+      font-size: vw(50);
+    }
+    @include mq(sp) {
+      font-size: 19px;
+    }
+    &::before {
+      @extend %icon;
+      margin-right: 27.8px;
+      @include mq(tab) {
+        margin-right: vw(27.8);
+      }
+      @include mq(sp) {
+        margin-right: 11.1px;
+      }
+    }
+    &::after {
+      @extend %icon;
+      margin-left: 36.5px;
+      @include mq(tab) {
+        margin-left: vw(36.5);
+      }
+      @include mq(sp) {
+        margin-left: 20px;
+      }
+    }
+  }
+  .point_box {
+    font-family: "TsukuARdGothic-Regular";
+    border: solid 15px #fff;
+    border-radius: 43px;
+    padding: 100px 118px 59px 175px;
+    @include mq(tab) {
+      padding-top: vw(100);
+      padding-right: vw(118);
+      padding-bottom: vw(59);
+      padding-left: vw(175);
+    }
+    @include mq(sp) {
+      border: solid 8px #fff;
+      padding: 44px 21px 68px 22px;
+    }
+    .result {
+      font-size: 160px;
+      position: relative;
+      @include mq(tab) {
+        font-size: vw(160);
+      }
+      @include mq(sp) {
+        font-size: 80px;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        background: repeating-linear-gradient(
+          135deg,
+          #707070 0,
+          #707070 1px,
+          $base 1px,
+          $base 5px
+        );
+        bottom: -30.5px;
+        left: 50%;
+        width: 546px;
+        max-width: 100%;
+        height: 18px;
+        transform: translateX(-50%);
+      }
+      span {
+        font-size: 100px;
+        @include mq(tab) {
+          font-size: vw(100);
+        }
+        @include mq(sp) {
+          font-size: 50px;
+        }
+      }
+      & + p {
+        font-size: 30px;
+        text-align: left;
+        line-height: 1.7;
+        padding-top: 101px;
+        @include mq(tab) {
+          font-size: vw(30);
+        }
+        @include mq(sp) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+.book {
+  padding-top: 249px;
+  padding-bottom: 230px;
+  text-align: center;
+  @include mq(tab) {
+    padding-top: vw(249);
+    padding-bottom: vw(230);
+  }
+  @include mq(sp) {
+    padding-top: 140px;
+    padding-bottom: 111.7px;
+  }
+
+  %line {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    width: 13px;
+    height: 95px;
+    background-color: #ffffff;
+    border-radius: 11px;
+    @include mq(tab) {
+      width: vw(13);
+      height: vw(95);
+    }
+    @include mq(sp) {
+      width: 3.85px;
+      height: 28.1px;
+    }
+  }
+
+  h2 {
+    font-family: "TsukuARdGothic-Regular";
+    font-size: 80px;
+    width: fit-content;
+    display: inline-block;
+    padding-bottom: 115px;
+    @include mq(tab) {
+      font-size: vw(80);
+      padding-bottom: vw(115);
+    }
+    @include mq(sp) {
+      font-size: 23px;
+      padding-bottom: 78.6px;
+    }
+    &::before {
+      @extend %line;
+      left: -80px;
+      transform: translate(-50px, 20px) rotate(-35deg);
+      @include mq(tab) {
+        left: vw(-80);
+      }
+      @include mq(sp) {
+        left: -25px;
+      }
+    }
+    &::after {
+      @extend %line;
+      right: -80px;
+      transform: translate(50px, 20px) rotate(35deg);
+      @include mq(tab) {
+        right: vw(-80);
+      }
+      @include mq(sp) {
+        right: -20px;
+      }
+    }
+  }
+  dl {
+    display: flex;
+    @include mq(sp) {
+      flex-direction: column;
+    }
+    dt {
+      @include mq(sp) {
+        width: 100%;
+      }
+      .book_img {
+        position: relative;
+        width: 330px;
+        max-width: 100%;
+        margin: 0 auto;
+        img {
+          box-shadow: 11.4px -12.1px #222222;
+        }
+        &::before {
+          content: "ダミー";
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 50px;
+        }
+      }
+    }
+    .book_detail {
+      padding-left: 93.7px;
+      line-height: 1.7;
+      @include mq(sp) {
+        padding: 0;
+      }
+      dd {
+        font-family: "TsukuARdGothic-Regular";
+        padding-bottom: 50px;
+        text-align: left;
+        @include mq(sp) {
+          padding: 70.5px 0 90px;
+        }
+        p {
+          font-size: 20px;
+          margin-bottom: 1em;
+          @include mq(tab) {
+            font-size: vw(20);
+          }
+          @include mq(sp) {
+            font-size: 16px;
+          }
+        }
+      }
+      a {
+        display: inline-block;
+        max-width: 100%;
+        padding: 20.9px 113.8px 19.9px 119px;
+        font-size: 40px;
+        background-color: #fff;
+        box-shadow: 7.2px 9px;
+        border-radius: 51px;
+        text-align: center;
+        @include mq(tab) {
+          padding-top: vw(20.9);
+          padding-right: vw(113.8);
+          padding-bottom: vw(19.9);
+          padding-left: vw(119);
+        }
+        @include mq(sp) {
+          padding: 15px 79px 21.3px;
+        }
+      }
+    }
+  }
+}
+
+.author {
+  font-family: "Yu Gothic";
+  padding: 81px 20px 189px;
+  background-color: $main;
+  @include mq(tab) {
+    padding-top: vw(81);
+    padding-right: vw(20);
+    padding-bottom: vw(189);
+    padding-left: vw(20);
+  }
+  @include mq(sp) {
+    padding: 124px 20px 174px;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 84px;
+    @include mq(sp) {
+      flex-direction: column;
+      padding: 0;
+    }
+    li {
+      width: 340px;
+      @include mq(sp) {
+        width: 100%;
+      }
+      &:first-child {
+        margin-right: 60px;
+      }
+      figure {
+        width: 100%;
+        @include mq(sp) {
+          text-align: center;
+        }
+        img {
+          border-radius: 50%;
+        }
+      }
+      dl {
+        padding-top: 107px;
+        dt {
+          font-size: 32px;
+          @include mq(tab) {
+            font-size: vw(32);
+          }
+          @include mq(sp) {
+            font-size: 30px;
+          }
+        }
+        dd {
+          padding-top: 16px;
+          line-height: 1.688;
+        }
+      }
+      address {
+        padding-top: 41px;
+        @include mq(sp) {
+          font-size: 15px;
+        }
+        p {
+          margin-bottom: 1em;
+        }
+      }
+    }
+    @include mq(sp) {
+      .author_left {
+        dl {
+          padding-top: 39px;
+          dd {
+            padding-top: 20px;
+          }
+        }
+        address {
+          padding-top: 20px;
+        }
+      }
+      .author_right {
+        padding-top: 140px;
+        dl {
+          padding-top: 65px;
+          dd {
+            padding-top: 25px;
+          }
+        }
+        address {
+          padding-top: 48px;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  font-family: "Yu Gothic";
+  padding: 97px 0 106px 0;
+  text-align: center;
+  @include mq(tab) {
+    padding-top: vw(97);
+    padding-bottom: vw(106);
+  }
+  @include mq(sp) {
+    padding: 33px 0;
+  }
+  .director {
+    margin-right: 62px;
+    @include mq(tab) {
+      margin-right: vw(62);
+    }
+    @include mq(sp) {
+      margin-right: 37px;
+    }
+  }
+}
